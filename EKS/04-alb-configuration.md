@@ -23,6 +23,7 @@ eksctl create iamserviceaccount \
   --name=aws-load-balancer-controller \
   --role-name AmazonEKSLoadBalancerControllerRole \
   --attach-policy-arn=arn:aws:iam::590183779906:policy/AWSLoadBalancerControllerIAMPolicy \
+  --override-existing-serviceaccounts \
   --approve
 ```
 
